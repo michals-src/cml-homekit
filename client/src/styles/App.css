@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Raleway', 'Exo 2', sans-serif;
+  background: #2b2379 url(../images/will-swann-1wFBnMoMzTg-unsplash.jpg) left repeat-x;
+  font-size: 1rem;
+  color: #fff;
+}
+
+header#main{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 150px;
+  color: #fff;
+}
+
+.btn-icon{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color:#fff;
+}
+
+.topper-notice{
+  background: red;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+  .topper-notice p{
+    margin: 0;
+  }
+  .topper-notice.visible{
+    display: block;
+  }
+
+.text-left{
+  text-align: left !important;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2.1rem;}
+h3{font-size: 1.6rem;}
+h4{font-size: 1.35rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1.15rem;}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top:5px;
+  margin-bottom:15px;
+  font-weight: 500;
+}
+
+p.lead{font-size: 1.1rem;}
+
+.overall{
+  max-width: 768px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px){
+  .overall{
+    width: auto !important;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.font-light{ font-weight: 400 !important; }
+.font-normal{ font-weight: 400 !important; }
+.font-500{ font-weight: 500 !important; }
+.font-bold{ font-weight: 70 !important; }
+.font-black{ font-weight: 800 !important; }
+
+.icon-broadcast{
+  width: 20px;
+  height: 14px;
+  background: url(../images/icon-broadcast.png) no-repeat;
+}
+.icon-timer{
+  width: 37px;
+  height: 40px;
+  background: url(../images/icon-timer.png) no-repeat;
+}
+.icon-zzz{
+  width: 58px;
+  height: 65px;
+  background: url(../images/icon-zzz.png) no-repeat;
+}
+.icon-play{
+  width: 19px;
+  height: 20px;
+  background: url(../images/icon-play.png) no-repeat;
+}
+.icon-clock{
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-clock.png) no-repeat;
+}
+.icon-right{
+  margin-right: 10px;
+  margin-bottom: -1px;
+  display: inline-block;
+}
+.icon-left{
+  margin-left: 10px;
+  margin-bottom: -1px;
+  display: inline-block;
+}
+.icon-center{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.icon-pos-right{
+  margin-left:auto;
+  margin-right:0;
+}
+
+.font-title{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+}
+
+select{
+  outline:none;
+  background: transparent;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 1.2rem;
+  text-align: left;
+  border:none;
+}
+
+select option{
+  color: #000;
+}
+
+.timer-section{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.timer-section.out{
+  display: none;;
+}
+
+.sleep-section{
+  text-align:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display:none;;
+}
+.sleep-section.in{
+  display:block;
+}
+
+.device-section{
+  margin-top:60px;
+  margin-bottom: 60px;
+}
+.device-container{
+  background: #5698d0;
+  padding: 0 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+  user-select: none;
+}
+.device-title{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.clock-section{
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+.select-win{
+  padding: 15px;
+  font-family: 'Exo 2', sans-serif;
+  display:none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.select-win.visible{
+  display:block;
+}
+
+.select-win .select-win-overall{
+  padding: 25px;
+  background: #fff;
+  border-radius: 15px;
+  color: #000;
+  max-height: 177px;
+  overflow: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  -webkit-overflow-scrolling: auto !important;
+}
+.select-win .select-win-overall::-webkit-scrollbar{
+  width:5px;
+}
+.select-win .select-win-overall::-webkit-scrollbar-track{
+  background:#eee;
+  margin: 20px 0;
+}
+.select-win .select-win-overall::-webkit-scrollbar-thumb{
+  background:#555;
+}
+
+.select-win .select-win-overall .select-win-container{
+  height: 100%;
+}
+
+.select-win-item{
+  display: inline-block;
+    padding: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+.select-win-item:hover{
+  background: #eee;
+}
+.select-win-item:hover p{
+  color: #555;
+}
+.select-win-item p{
+    margin: 0;
+    font-weight: 500;
+    color: #888;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+}
+.select-win-item.current{
+  background: #898dbb;
+}
+.select-win-item.current p{
+  color: #fff;
+}
+
+.clock-input-group{
+  display: block;
+  padding: 0 5px;
+  margin-bottom: 20px;
+}
+  .clock-input-group p {
+    margin: 0;
+  }
+
+.clock-label{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 5px;
+  margin-top:10px;
+}
+  
+.clock-select{
+  text-align: center;
+  font-size:3.5rem;
+  color: #fff;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.intensity-section{
+  margin-bottom: 50px;
+}
+.intensity{
+  width: 100%;
+  height: 8px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+  .intensity-child{
+    width: 25%;
+    background:transparent;
+    height: 100%;
+    display: block;
+  }
+  .intensity-child.in{
+    background: #fff;
+  }
+.intensity-btn{
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 15px;
+  border: none;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+
+.work-area{
+  height:90vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.led-light-bar{
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: rgba(218, 177, 29, 0.3);
+  border: 3px solid #ffa825;
+  box-shadow: 0 0 20px #0000006b;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.led-light-bar .led-light-child{
+  width: 100%;
+  height: 11.11112%;
+  background-color: rgba(255,255,255,0.12);
+}
+  .led-light-bar .led-light-child.child-off{
+    background: #ffa825;
+  }
+  .led-light-bar .led-light-child.child-active{
+    background: #da971d;
+  }
+
+.led-time{
+  text-align: center;
+  height: 60vh;
+  display:flex;
+  align-items: center;
+}
+.led-time-header{
+  margin-bottom:30px;
+}
+.led-time-container{
+  display: table;
+  margin: 0 auto;
+}
